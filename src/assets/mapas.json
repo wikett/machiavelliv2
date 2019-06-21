@@ -3,20 +3,20 @@
   "campanyas": [
       {
           "anyo": 1750,
-          "imagen": "http://res.cloudinary.com/djhqderty/image/upload/v1514593909/machiavelli/ellq0budkcmvhtpudwno.jpg",
+          "imagen": "hambruna.jpg",
           "estacion": "Primavera",
           "fase": "Hambruna",
           "estilo": "primavera",
-          "descripcion": "Este año la hambruna azote con toda su crudeza (12). Ánimo a todas las tropas.",
+          "descripcion": "Este es un año bueno, habrá poca hambruna. Se permitirá algo de derroche.",
           "index": 0
       },
       {
         "anyo": 1750,
-        "imagen": "http://res.cloudinary.com/djhqderty/image/upload/v1514593909/machiavelli/ellq0budkcmvhtpudwno.jpg",
+        "imagen": "ajustes_militares.jpg",
         "estacion": "Primavera",
         "fase": "Ajustes Militares",
         "estilo": "primavera",
-        "descripcion": "Este año la hambruna azote con toda su crudeza (12). Ánimo a todas las tropas.",
+        "descripcion": "Todas las tropas están listas en sus territorios dispuestas a la aventura.",
         "index": 1
       },
       {
@@ -25,7 +25,7 @@
         "estacion": "Primavera",
         "fase": "Movimientos",
         "estilo": "primavera",
-        "descripcion": "Este año la hambruna azote con toda su crudeza (12). Ánimo a todas las tropas.",
+        "descripcion": "Los primeros movimientos del año. Se intuye ya posibles alianzas y enemigos.",
         "index": 2
       },
       {
@@ -34,36 +34,9 @@
         "estacion": "Verano",
         "fase": "Plaga",
         "estilo": "verano",
-        "descripcion": "Este año la hambruna azote con toda su crudeza (12). Ánimo a todas las tropas.",
+        "descripcion": "La plaga cae moderada (8). Unidades autónomas se han muerto por esto.",
         "index": 3
-      },
-      {
-        "anyo": 1750,
-        "imagen": "http://res.cloudinary.com/djhqderty/image/upload/v1514593909/machiavelli/ellq0budkcmvhtpudwno.jpg",
-        "estacion": "Verano",
-        "fase": "Movimientos",
-        "estilo": "verano",
-        "descripcion": "Este año la hambruna azote con toda su crudeza (12). Ánimo a todas las tropas.",
-        "index": 4
-      },
-      {
-        "anyo": 1750,
-        "imagen": "http://res.cloudinary.com/djhqderty/image/upload/v1514593909/machiavelli/ellq0budkcmvhtpudwno.jpg",
-        "estacion": "Otoño",
-        "fase": "Movimientos",
-        "estilo": "otonyo",
-        "descripcion": "Este año la hambruna azote con toda su crudeza (12). Ánimo a todas las tropas.",
-        "index": 5
-      },
-      {
-        "anyo": 1751,
-        "imagen": "http://res.cloudinary.com/djhqderty/image/upload/v1514593909/machiavelli/ellq0budkcmvhtpudwno.jpg",
-        "estacion": "Primavera",
-        "fase": "Hambruna",
-        "estilo": "primavera",
-        "descripcion": "Este año la hambruna azote con toda su crudeza (12). Ánimo a todas las tropas.",
-        "index": 6
-    }
+      }
   ]    
 }
   

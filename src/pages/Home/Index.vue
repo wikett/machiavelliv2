@@ -7,11 +7,12 @@
                 </h2>
 
                 <div class="container">
-                    <div class="columns is-multiline ">
+                    <div class="columns is-multiline reverse-row-order">
                             <AppMapa 
                                 v-for="(item, index) in staticJson.campanyas"
                                 :key="index"
-                                v-bind:mapaData="item">
+                                v-bind:mapaData="item"
+                                v-on:messageFromChild="abrirGaleria">
                             </AppMapa>
                     </div>
                 </div>
@@ -19,8 +20,7 @@
                 
             </div>
             
-            <button id="btn">Open PhotoSwipe</button>
-            <button v-on:click="openGallery(0)">Say Hi</button>
+            
         </div>
 
 
@@ -120,26 +120,41 @@ export default {
         say: function (msg) {
             this.gallery.init();
         },
+        abrirGaleria: function(indexMapa){
+            console.log(`abrir la foto: ${indexMapa}`)
+            this.openGallery(indexMapa);
+        },
         openGallery: function(numeroSlide){
             console.log(`numeroSlide: ${numeroSlide}`)
             var pswpElement = document.querySelectorAll('.pswp')[0];
             // build items array
             var items = [
                 {
-                    src: 'https://picsum.photos/4680/3320',
-                    w: 4680,
-                    h: 3320
+                    src: 'https://res.cloudinary.com/djhqderty/image/upload/v1561146043/machiavelli%201750/1750_hambruna.jpg',
+                    w: 3410,
+                    h: 2168
                 },
                 {
-                    src: 'https://placekitten.com/1200/900',
-                    w: 1200,
-                    h: 900
+                    src: 'https://res.cloudinary.com/djhqderty/image/upload/v1561146039/machiavelli%201750/1750_ajustes_militares.jpg',
+                    w: 3410,
+                    h: 2168
+                },
+                {
+                    src: 'https://res.cloudinary.com/djhqderty/image/upload/v1561146037/machiavelli%201750/1750_movimiento_primavera.jpg',
+                    w: 3410,
+                    h: 2168
+                },
+                {
+                    src: 'https://res.cloudinary.com/djhqderty/image/upload/v1561146036/machiavelli%201750/1750_plaga.jpg',
+                    w: 3410,
+                    h: 2168
                 }
             ];
 
              // define options (if needed)
             var options = {
-                index:numeroSlide
+                index:numeroSlide,
+                history: false
                 
             };
             this.gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
@@ -151,12 +166,18 @@ export default {
 </script>
 <style lang="scss" scoped>
 .fade {
-    color:red;
+    
 }
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+ .reverse-column-order {
+    @media screen and (min-width: 769px) { 
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 </style>
