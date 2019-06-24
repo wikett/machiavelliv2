@@ -148,7 +148,7 @@ export default {
                     h: 2168
                 },
                 {
-                    src: 'https://res.cloudinary.com/djhqderty/image/upload/v1561146036/machiavelli%201750/1750_plaga.jpg',
+                    src: 'https://res.cloudinary.com/djhqderty/image/upload/v1561317362/machiavelli%201750/1750_plaga22.jpg',
                     w: 3410,
                     h: 2168
                 }
