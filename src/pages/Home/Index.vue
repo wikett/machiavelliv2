@@ -153,7 +153,7 @@ export default {
                     h: 2168
                 },
                 {
-                    src: 'https://res.cloudinary.com/djhqderty/image/upload/v1561408517/machiavelli%201750/1750_verano_movimientos.jpg',
+                    src: 'https://res.cloudinary.com/djhqderty/image/upload/v1561411036/machiavelli%201750/1750_verano_movimientos.jpg',
                     w: 3410,
                     h: 2168
                 }
