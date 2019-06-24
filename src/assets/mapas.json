@@ -36,6 +36,15 @@
         "estilo": "verano",
         "descripcion": "Este año la plaga cae moderada (8). Unidades autónomas se han muerto por esto.",
         "index": 3
+      },
+    {
+        "anyo": 1750,
+        "imagen": "https://res.cloudinary.com/djhqderty/image/upload/v1561408517/machiavelli%201750/1750_verano_movimientos.jpg",
+        "estacion": "Verano",
+        "fase": "Movimientos",
+        "estilo": "verano",
+        "descripcion": "Batallas, agrupamientos, invasiones, perdidas y mucho más... La sangre ha visto la luz.",
+        "index": 4
       }
   ]    
 }
