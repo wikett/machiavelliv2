@@ -1,19 +1,24 @@
 <template>
 <div class="column is-12-mobile is-half-tablet is-2-desktop"  >
+  <a href="#" @click="openGaleria()">
 <div class="card">
+
   <div class="card-image">
-    <a href="#" @click="openGaleria()">
+    
         <figure class="image is-4by3">
       <img :src="getImagen(mapaData.index)" alt="Placeholder image">
     </figure>
-    </a>
+      <div class="anyo">
+        <span>1750</span>
+      </div>
+    
   </div>
   <div class="card-content">
     <div class="media">
       
       <div class="media-content">
-        <p class="title is-5">{{mapaData.estacion}}</p>
-        <p class="subtitle is-7 has-text-primary">{{mapaData.fase}}</p>
+        <p v-bind:class="{'primavera': mapaData.estilo=='primavera', 'verano': mapaData.estilo=='verano', 'otonyo': mapaData.estilo=='otonyo'}">{{mapaData.estacion}}</p>
+        <p class="subtitle is-7 has-text-primary fase">{{mapaData.fase}}</p>
       </div>
     </div>
 
@@ -24,6 +29,7 @@
   </div>
   
 </div>
+</a>
 </div>
 </template>
 <script>
@@ -64,10 +70,44 @@ export default {
   opacity: 0;
 }
 .mapa-descripcion{
-    font-size: .6rem!important;
+    font-size: 1rem !important;
+    min-height: 144px;
      @media screen and (max-width: 1087px) {
-        font-size: 1.5rem!important;
+        //font-size: 1.5rem!important;
         
     }
+}
+.anyo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #0c07054a;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+
+    span {
+      font-size: 2rem;
+      color: white;
+    }
+}
+.primavera{
+    color: green;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.verano {
+    color: #ea842a;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.otonyo {
+    color: #733a07;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.fase{
+  font-size: 1rem;
+    font-weight: bold;
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
     <section class="hero is-dark is-medium">
-        <div class="hero-body">
+        <div class="hero-body" style="padding-top: 4rem;">
             <div class="container has-text-centered"><br> <img src="@/assets/logo-azul.png" width="200px">
                 <h2 class="subtitle is-4">
                     Entrega de órdenes: <span class="has-text-weight-bold">{{staticJson.limiteOrdenes}}</span>
                 </h2>
 
-                <div class="container">
+                <div class="container" style="margin-top:2rem">
                     <div class="columns is-multiline reverse-row-order">
                             <AppMapa 
                                 v-for="(item, index) in staticJson.campanyas"
@@ -113,8 +113,11 @@ export default {
             staticJson: reviewsData
         }
     },
+    created(){
+        console.log(`created`)
+    },
     mounted(){
-        console.log(`Created`);
+        console.log(`mounted`);
     },
     methods: {
         say: function (msg) {
