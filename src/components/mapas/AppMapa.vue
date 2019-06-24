@@ -50,6 +50,8 @@ export default {
     return "https://res.cloudinary.com/djhqderty/image/upload/v1561148205/ajustes_militares_ak1qms.jpg"
     break;
     case 2:
+    case 4:
+    case 5:
     return "https://res.cloudinary.com/djhqderty/image/upload/v1561148205/movimientos_srw2ng.jpg"
     break;
     case 3:
