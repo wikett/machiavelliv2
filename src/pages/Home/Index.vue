@@ -5,11 +5,13 @@
                 <h2 class="subtitle is-4">
                     Entrega de órdenes: <span class="has-text-weight-bold">{{staticJson.limiteOrdenes}}</span>
                 </h2>
-
-                <div class="container" style="margin-top:2rem">
+                
+                
+                <div class="container" style="margin-top:2rem" v-for="campanya in anyos" :key="campanya">
+                    <h2 class="titulo-anyo"> {{campanya}} </h2>
                     <div class="columns is-multiline reverse-row-order">
                             <AppMapa 
-                                v-for="(item, index) in staticJson.campanyas"
+                                v-for="(item, index) in getFases(campanya)"
                                 :key="index"
                                 v-bind:mapaData="item"
                                 v-on:messageFromChild="abrirGaleria">
@@ -100,7 +102,8 @@
 
 // @ is an alias to /src
 import AppMapa from '@/components/mapas/AppMapa.vue';
-import reviewsData from '@/assets/mapas.json'
+import reviewsData from '@/assets/mapas.json';
+import _ from 'lodash';
 
 export default {
     name: 'home',
@@ -110,16 +113,32 @@ export default {
     data: function(){
         return{
             gallery: null,
-            staticJson: reviewsData
+            staticJson: reviewsData,
+            anyosAgrupados: null,
+            anyos: []
         }
     },
     created(){
         console.log(`created`)
+        console.log(`staticJson: ${JSON.stringify(this.staticJson, null, 4)}`);
+        this.anyosAgrupados = this.groupBy(this.staticJson.campanyas, 'anyo');
+        console.log(`this.anyosAgrupados : ${JSON.stringify(this.anyosAgrupados , null, 4)}`);
+        this.anyos = _.reverse(_.uniq(_.map(this.staticJson.campanyas, 'anyo')));
+        console.log(`anyos: ${JSON.stringify(this.anyos, null, 4)}`);
     },
     mounted(){
         console.log(`mounted`);
     },
     methods: {
+        getFases: function(anyo){
+            return this.anyosAgrupados[anyo];
+        },
+        groupBy: function(list, props){
+            return list.reduce((a, b) => {
+                (a[b[props]] = a[b[props]] || []).push(b);
+                return a;
+            }, {});
+        },
         say: function (msg) {
             this.gallery.init();
         },
@@ -130,35 +149,14 @@ export default {
         openGallery: function(numeroSlide){
             console.log(`numeroSlide: ${numeroSlide}`)
             var pswpElement = document.querySelectorAll('.pswp')[0];
-            // build items array
-            var items = [
-                {
-                    src: 'https://res.cloudinary.com/djhqderty/image/upload/v1561146043/machiavelli%201750/1750_hambruna.jpg',
-                    w: 3410,
-                    h: 2168
-                },
-                {
-                    src: 'https://res.cloudinary.com/djhqderty/image/upload/v1561146039/machiavelli%201750/1750_ajustes_militares.jpg',
-                    w: 3410,
-                    h: 2168
-                },
-                {
-                    src: 'https://res.cloudinary.com/djhqderty/image/upload/v1561146037/machiavelli%201750/1750_movimiento_primavera.jpg',
-                    w: 3410,
-                    h: 2168
-                },
-                {
-                    src: 'https://res.cloudinary.com/djhqderty/image/upload/v1561317362/machiavelli%201750/1750_plaga22.jpg',
-                    w: 3410,
-                    h: 2168
-                },
-                {
-                    src: 'https://res.cloudinary.com/djhqderty/image/upload/v1561415797/machiavelli%201750/1750_verano_movimientos.jpg',
-                    w: 3410,
-                    h: 2168
-                }
-            ];
 
+            var items = [];
+
+            for (var item of this.staticJson.campanyas){
+                items.push({src: item.imagen, w: 3410, h: 2168});
+            }
+
+           
              // define options (if needed)
             var options = {
                 index:numeroSlide,
@@ -173,9 +171,6 @@ export default {
     }
 </script>
 <style lang="scss" scoped>
-.fade {
-    
-}
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
@@ -187,5 +182,10 @@ export default {
     display: flex;
     flex-direction: column-reverse;
   }
+}
+.titulo-anyo {
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 </style>

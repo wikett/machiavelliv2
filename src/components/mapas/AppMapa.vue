@@ -9,7 +9,7 @@
       <img :src="getImagen(mapaData.index)" alt="Placeholder image">
     </figure>
       <div class="anyo">
-        <span>1750</span>
+        <span>{{mapaData.anyo}}</span>
       </div>
     
   </div>
@@ -42,19 +42,20 @@ export default {
             this.$emit('messageFromChild',this.mapaData.index);
         },
         getImagen(index){
-            switch(index) {
+            console.log(`${index}%6: ${index%6}`)
+            switch(index%6) {
   case 0:
     return "https://res.cloudinary.com/djhqderty/image/upload/v1561148205/hambruna_ksutbt.jpg"
     break;
   case 1:
     return "https://res.cloudinary.com/djhqderty/image/upload/v1561148205/ajustes_militares_ak1qms.jpg"
     break;
-    case 2:
-    case 4:
-    case 5:
+  case 2:
+  case 4:
+  case 5:
     return "https://res.cloudinary.com/djhqderty/image/upload/v1561148205/movimientos_srw2ng.jpg"
     break;
-    case 3:
+  case 3:
     return "https://res.cloudinary.com/djhqderty/image/upload/v1561148205/plaga_tzex8q.jpg"
     break;
   default:
