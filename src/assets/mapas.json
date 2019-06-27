@@ -3,7 +3,7 @@
   "campanyas": [
       {
           "anyo": 1750,
-          "imagen": "hambruna.jpg",
+          "imagen": "https://res.cloudinary.com/djhqderty/image/upload/v1561146043/machiavelli%201750/1750_hambruna.jpg",
           "estacion": "Primavera",
           "fase": "Hambruna",
           "estilo": "primavera",
@@ -12,7 +12,7 @@
       },
       {
         "anyo": 1750,
-        "imagen": "ajustes_militares.jpg",
+        "imagen": "https://res.cloudinary.com/djhqderty/image/upload/v1561146039/machiavelli%201750/1750_ajustes_militares.jpg",
         "estacion": "Primavera",
         "fase": "Ajustes Militares",
         "estilo": "primavera",
@@ -21,7 +21,7 @@
       },
       {
         "anyo": 1750,
-        "imagen": "http://res.cloudinary.com/djhqderty/image/upload/v1514593909/machiavelli/ellq0budkcmvhtpudwno.jpg",
+        "imagen": "https://res.cloudinary.com/djhqderty/image/upload/v1561146037/machiavelli%201750/1750_movimiento_primavera.jpg",
         "estacion": "Primavera",
         "fase": "Movimientos",
         "estilo": "primavera",
@@ -30,7 +30,7 @@
       },
       {
         "anyo": 1750,
-        "imagen": "http://res.cloudinary.com/djhqderty/image/upload/v1514593909/machiavelli/ellq0budkcmvhtpudwno.jpg",
+        "imagen": "https://res.cloudinary.com/djhqderty/image/upload/v1561317362/machiavelli%201750/1750_plaga22.jpg",
         "estacion": "Verano",
         "fase": "Plaga",
         "estilo": "verano",
