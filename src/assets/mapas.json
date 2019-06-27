@@ -45,6 +45,15 @@
         "estilo": "verano",
         "descripcion": "Batallas, agrupamientos, invasiones, perdidas y mucho más... La sangre ha visto la luz.",
         "index": 4
+      },
+    {
+        "anyo": 1750,
+        "imagen": "https://res.cloudinary.com/djhqderty/image/upload/v1561668577/machiavelli%201750/1750_otonyo_movimientos.jpg",
+        "estacion": "Otoño",
+        "fase": "Movimientos",
+        "estilo": "otoño",
+        "descripcion": "¿Conoceis lo que es la traición, conocéis lo que es la sangre? Otoño de 1750 sí lo sabe.",
+        "index": 5
       }
   ]    
 }
