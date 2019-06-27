@@ -54,6 +54,15 @@
         "estilo": "otoño",
         "descripcion": "¿Conoceis lo que es la traición, conocéis lo que es la sangre? Otoño de 1750 sí lo sabe.",
         "index": 5
+      },
+    {
+        "anyo": 1751,
+        "imagen": "https://res.cloudinary.com/djhqderty/image/upload/v1561669755/machiavelli%201750/1751_hambruna.jpg",
+        "estacion": "Primavera",
+        "fase": "Hambruna",
+        "estilo": "primavera",
+        "descripcion": "Es año la hambruna azota con nivel 9. Solo más ricos podrán pasar este año de manera pudiente.",
+        "index": 6
       }
   ]    
 }
