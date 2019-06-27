@@ -1,8 +1,8 @@
 <template>
-    <section class="hero is-dark is-medium">
+    <section class="hero is-medium">
         <div class="hero-body" style="padding-top: 4rem;">
             <div class="container has-text-centered"><br> <img src="@/assets/logo-azul.png" width="200px">
-                <h2 class="subtitle is-4">
+                <h2 class="is-4">
                     Entrega de órdenes: <span class="has-text-weight-bold">{{staticJson.limiteOrdenes}}</span>
                 </h2>
                 

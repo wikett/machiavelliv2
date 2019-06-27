@@ -23,6 +23,8 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.3rem;
   letter-spacing: 1px;
+  background-color: rgba(9,38,66,.95);
+  color: #dbdbdb;
   
 }
 </style>
