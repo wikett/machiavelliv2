@@ -1,5 +1,5 @@
 {
-  "limiteOrdenes": "Jueves 27 de Junio a las 21 horas.",
+  "limiteOrdenes": "Jueves 4 de Julio a las 21 horas.",
   "campanyas": [
       {
           "anyo": 1750,
@@ -63,6 +63,15 @@
         "estilo": "primavera",
         "descripcion": "Es año la hambruna azota con nivel 9. Solo más ricos podrán pasar este año de manera pudiente.",
         "index": 6
+      },
+    {
+        "anyo": 1751,
+        "imagen": "https://res.cloudinary.com/djhqderty/image/upload/v1562013957/machiavelli%201750/1751_ajustes-militares.jpg",
+        "estacion": "Primavera",
+        "fase": "Ajustes Militares",
+        "estilo": "primavera",
+        "descripcion": "Y las tropas vieron la luz. Los reinos calculan sus mejores movimientos para avanzar por Europa...",
+        "index": 7
       }
   ]    
 }
