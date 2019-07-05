@@ -72,6 +72,15 @@
         "estilo": "primavera",
         "descripcion": "Y las tropas vieron la luz. Los reinos calculan sus mejores movimientos para avanzar por Europa...",
         "index": 7
+      },
+    {
+        "anyo": 1751,
+        "imagen": "https://res.cloudinary.com/djhqderty/image/upload/v1562356282/machiavelli%201750/1751_primavera_movimientos.jpg",
+        "estacion": "Primavera",
+        "fase": "Movimientos",
+        "estilo": "primavera",
+        "descripcion": "¿Sabes lo que es el soborno? pues aquí nos sobra de esto...",
+        "index": 8
       }
   ]    
 }
