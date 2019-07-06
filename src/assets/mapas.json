@@ -81,7 +81,16 @@
         "estilo": "primavera",
         "descripcion": "¿Sabes lo que es el soborno? pues aquí nos sobra de esto...",
         "index": 8
-      }
+      },
+    {
+        "anyo": 1751,
+        "imagen": "https://res.cloudinary.com/djhqderty/image/upload/v1562413870/machiavelli%201750/1751_plaga.jpg",
+        "estacion": "Verano",
+        "fase": "Plaga",
+        "estilo": "verano",
+        "descripcion": "Este año hay una mala plaga (9). Unidades autónomas se han muerto por esto y del ejército Sueco.",
+        "index": 9
+      },
   ]    
 }
   
