@@ -1,5 +1,5 @@
 {
-  "limiteOrdenes": "Martes 9 de Julio a las 19 horas.",
+  "limiteOrdenes": "Jueves 11 de Julio a las 20:30 horas.",
   "campanyas": [
       {
           "anyo": 1750,
@@ -90,6 +90,15 @@
         "estilo": "verano",
         "descripcion": "Este año hay una mala plaga (9). Unidades autónomas se han muerto por esto y del ejército Sueco.",
         "index": 9
+      },
+    {
+        "anyo": 1751,
+        "imagen": "https://res.cloudinary.com/djhqderty/image/upload/v1562697445/machiavelli%201750/1751_verano.jpg",
+        "estacion": "Verano",
+        "fase": "Movimientos",
+        "estilo": "verano",
+        "descripcion": "Verano plomizo de 1751. Los Otomanos avanzan a buen ritmo, lo mismo ocurre con los Suecos...",
+        "index": 10
       }
   ]    
 }
