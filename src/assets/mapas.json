@@ -99,6 +99,15 @@
         "estilo": "verano",
         "descripcion": "Verano plomizo de 1751. Los Otomanos avanzan a buen ritmo, lo mismo ocurre con los Suecos...",
         "index": 10
+      },
+    {
+        "anyo": 1751,
+        "imagen": "https://res.cloudinary.com/djhqderty/image/upload/v1562877385/machiavelli%201750/1751_otonyo.jpg",
+        "estacion": "Otoño",
+        "fase": "Movimientos",
+        "estilo": "otoño",
+        "descripcion": "Otoño de 1751, el Imperio Otomano conquista Europa y se hace con la gran victoria!",
+        "index": 11
       }
   ]    
 }
